@@ -77,7 +77,7 @@ jobs:
            sudo rm -rf SGSI-build-tool/10/fixbug/fixbug.sh
            mv fix/Flyme.sh SGSI-build-tool/10/fixbug/fixbug.sh
            
-       - name: Make ColorOS SGSI
+       - name: Make MIUI SGSI
          if: steps.var.outputs.make_coloros == 'true'
          run: |
            sudo python3 SGSI-build-tool/10/oppo_ozip/ozipdecrypt.py SGSI-build-tool/10/tmp/${{ steps.var.outputs.rom_name }}
